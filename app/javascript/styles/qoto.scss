@@ -74,3 +74,8 @@
 .drawer {
   width: 360px;
 }
+
+.status.muted, .muted *, .muted .status__content a {
+  background-color: #f9f9f9!important;
+  color: gray!important;
+}

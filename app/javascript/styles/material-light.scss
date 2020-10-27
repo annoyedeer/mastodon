@@ -92,7 +92,7 @@ div,
 .setting-text:focus,
 .setting-text:active,
 .navigation-bar__profile-account {
-color: #000!important;
+color: #000;
 }
 .status__content,
 .display-name,
@@ -111,6 +111,9 @@ label span,
 .admin-wrapper .content p,
 .admin-wrapper .content strong,
 .admin .content h2 {
+color: #323232;
+}
+a {
 color: #323232!important;
 }
 .sidebar a.selected,
