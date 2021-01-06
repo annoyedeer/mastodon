@@ -219,6 +219,12 @@ class Status extends ImmutablePureComponent {
     this.props.onOpenVideo(status.get('id'), status.getIn(['media_attachments', 0]), options);
   }
 
+  handleOpenQuoteVideo = (options) => {
+    const status = this._properStatus();
+    const quote_status = status.get('quote');
+    this.props.onOpenVideo(quote_status.get('id'), quote_status.getIn(['media_attachments', 0]), options);
+  }
+
   handleOpenMedia = (media, index) => {
     this.props.onOpenMedia(this._properStatus().get('id'), media, index);
   }
@@ -545,7 +551,7 @@ class Status extends ImmutablePureComponent {
                   height={110}
                   inline
                   sensitive={quote_status.get('sensitive')}
-                  onOpenVideo={this.handleOpenVideo}
+                  onOpenVideo={this.handleOpenQuoteVideo}
                   cacheWidth={this.props.cacheMediaWidth}
                   deployPictureInPicture={pictureInPicture.get('available') ? this.handleDeployPictureInPicture : undefined}
                   visible={this.state.showQuoteMedia}
