@@ -564,12 +564,9 @@ GEM
     ruby-progressbar (1.11.0)
     ruby-saml (1.11.0)
       nokogiri (>= 1.5.10)
-<<<<<<< HEAD
     ruby2_keywords (0.0.4)
-=======
     rucaptcha (2.5.3)
       railties (>= 3.2)
->>>>>>> feat: add captcha to registration form
     rufus-scheduler (3.6.0)
       fugit (~> 1.1, >= 1.1.6)
     safety_net_attestation (0.4.0)
